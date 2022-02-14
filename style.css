@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: #22254b;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #373b69;
+    padding: 16px;
+}
+
+input{
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    background-color: #373b69;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+input::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #7378C5;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card{
+    display: block;
+    width: 300px;
+    position: relative;
+    background-color: #373b69;
+    border-radius: 7px;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    margin: 16px;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.div-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 16px;
+}
+
+h3{
+    font-size: 18.72px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin: 0 0 18.72px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+span{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    background-color: #22254b;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+.overview{
+    font-family: "Poppins", sans-serif;
+    background-color: #373b69;
+    color: white;
+    padding: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: 0.3s ease-in-out;
+    border-radius: 3px;
+}
+
+.overview::-webkit-scrollbar{
+    width: 10px;
+}
+
+.overview::-webkit-scrollbar-thumb {
+    background-color: #1e203b;
+    border-radius: 10px;
+}    
+
+.card:hover .overview{
+    transform: translateY(0);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+
+svg{
+    transition: all 0.3s ease-in;
+    fill: antiquewhite;
+}
+
+svg:hover{
+    fill: #898ed3;
+}
+
+.year{
+    font-size: 18.72px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.5px;
+}
